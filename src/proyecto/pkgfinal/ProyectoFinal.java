@@ -322,10 +322,10 @@ System.out.println("Capture las Celcius a converir");
 return 0;
 }
 public static int Fahrenheit(){
-System.out.println("Capture las Celcius a converir");
+System.out.println("Capture las Fahrenheit a converir");
                                             f=DK.nextInt();
-                                            f1=f * 100000;//Fahrenheit
-                                            f2=f * 0.621371;//Kelvin
+                                            f1=(f-32)*5/9;//Celcius
+                                            f2=f1 + 273.15;//Kelvin
                                              System.out.println("---------------------------------");
                                             System.out.println("Fahrenheit = "+f1+"\n"
                                                     + "Kelvin = "+f2+"\n"
@@ -334,10 +334,11 @@ System.out.println("Capture las Celcius a converir");
 return 0;
 }
 public static int Kelvin(){
-System.out.println("Capture las Celcius a converir");
+System.out.println("Capture las Kelvin a converir");
                                             f=DK.nextInt();
-                                            f1=f * 100000;//Fahrenheit
-                                            f2=f * 0.621371;//Kelvin
+                                            f1=f  - 273.15;//celcius
+                                            f2=(f1 * 9/5) + 32;//Fahrenheit
+                                           
                                              System.out.println("---------------------------------");
                                             System.out.println("Fahrenheit = "+f1+"\n"
                                                     + "Kelvin = "+f2+"\n"
